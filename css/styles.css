@@ -128,7 +128,7 @@ p {
 }
 
 /* TITLE */
-.title-description {
+.title {
   color: var(--white);
   text-align: center;
   background-color: var(--darkGrey-background-color);
@@ -139,25 +139,23 @@ p {
   background-size: 1600px;
 }
 
-.title-description > div {
+.title__container {
   padding: 106px 0;
 }
 
-.title-text {
+.title__text {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-
-  /* hw-03 */
   width: 696px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
 }
 
-.title-button {
+.title__button {
   padding: 10px 41px;
 }
 
