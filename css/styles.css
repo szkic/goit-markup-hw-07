@@ -54,52 +54,31 @@ p {
   border-bottom: 1px solid var(--headerBorder);
 }
 
-.links {
+/* HEADER */
+
+.page-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 25px 0;
 }
 
-.left-link {
+.page-header__left-section {
   display: flex;
   align-items: center;
 }
 
-.nav-list {
+.page-header__nav-list {
   display: flex;
   gap: 46px;
 }
 
-.header-contact {
+.page-header__right-section {
   display: flex;
   gap: 50px;
 }
 
-/* LOGO */
-.logo {
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  line-height: 1.17;
-  color: var(--black-text);
-  text-decoration: none;
-
-  /* hw03 */
-  margin-right: 93px;
-}
-
-.logo-blue {
-  color: var(--blue-text);
-}
-
-.logo-white {
-  color: var(--white);
-  margin-right: 0;
-}
-
-.nav-link {
+.page-header__nav-link {
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
@@ -111,16 +90,41 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contact .nav-link {
+.page-header__right-section .page-header__nav-link {
   color: var(--light-grey);
 }
 
-.header-contact li:hover .raster,
-.nav-link:hover,
-.nav-link:focus,
-.nav-link:focus .raster {
+.page-header__right-section .page-header__contact:hover .page-header__raster,
+.page-header__nav-link:hover,
+.page-header__nav-link:focus,
+.page-header__nav-link:focus .page-header__raster {
   color: var(--blue-text);
   fill: var(--blue-text);
+}
+
+/* LOGO */
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  line-height: 1.17;
+  color: var(--black-text);
+  text-decoration: none;
+  margin-right: 93px;
+}
+
+/* LOGO HEADER */
+
+.logo__blue {
+  color: var(--blue-text);
+}
+
+/* LOGO FOOTER */
+
+.logo-white {
+  color: var(--white);
+  margin-right: 0;
 }
 
 /* TITLE */
@@ -381,13 +385,13 @@ p {
 }
 
 /* ICONS */
-.header-contact a {
+.page-header__right-section a {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.raster {
+.page-header__raster {
   fill: var(--light-grey);
   transition-property: color, fill;
   transition-duration: 250ms;
@@ -505,7 +509,7 @@ p {
   text-transform: uppercase;
 }
 
-.is-active::after {
+.page-header__is-active::after {
   content: '';
   display: inline-block;
   width: 100%;
@@ -517,11 +521,11 @@ p {
   background-color: var(--blue-text);
 }
 
-.active-container {
+.page-header__active-container {
   position: relative;
 }
 
-.is-active {
+.page-header__is-active {
   color: #2196f3;
 }
 
