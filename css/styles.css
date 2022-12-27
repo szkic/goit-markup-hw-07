@@ -159,7 +159,7 @@ p {
   padding: 10px 41px;
 }
 
-.title-button:hover {
+.title__button:hover {
   cursor: pointer;
 }
 
@@ -168,13 +168,13 @@ p {
   padding-top: 94px;
 }
 
-.advantages-main {
+.advantages {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.advantages-title {
+.advantages__title {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -182,7 +182,7 @@ p {
   padding-bottom: 10px;
 }
 
-.advantages-desc {
+.advantages__desc {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -396,7 +396,7 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.adv-icon-background {
+.advantages__adv-icon-background {
   background-color: var(--team-background-color);
   width: 270px;
   height: 120px;
