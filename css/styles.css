@@ -193,14 +193,35 @@ p {
 }
 
 /* WHAT WE DO */
-.what-we-do-images-list {
+.what-we-do {
+  text-align: center;
+}
+
+.what-we-do__images-list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.what-we-do {
+.what-we-do__our-jobs {
+  position: relative;
+  z-index: -1;
+}
+
+.what-we-do__job-desc {
+  position: absolute;
+  top: 224px;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  padding: 27px;
+  font-size: 14px;
+  font-weight: 700;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  background-color: var(--image-desc);
 }
 
 /* TITLE PAGE HEADERS */
@@ -525,27 +546,6 @@ p {
 
 .page-header__is-active {
   color: #2196f3;
-}
-
-.our-jobs {
-  position: relative;
-  z-index: -1;
-}
-
-.job-desc {
-  position: absolute;
-  top: 224px;
-  left: 0;
-  width: 370px;
-  height: 70px;
-  padding: 27px;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  color: var(--white);
-  background-color: var(--image-desc);
 }
 
 .portfolio-description-text {
