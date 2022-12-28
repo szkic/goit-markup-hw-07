@@ -458,81 +458,82 @@
     </footer>
 
     <div class="modal is-hidden" data-modal>
-      <div class="modal-box">
-        <button class="modal-button" data-modal-close></button>
-        <h4 class="modal-title">Zostaw swoje dane w formularzu poniżej</h4>
-        <div class="form-container">
+      <div class="modal__box">
+        <button class="modal__close-button" data-modal-close></button>
+        <h4 class="modal__title">Zostaw swoje dane w formularzu poniżej</h4>
+        <div class="modal__form-container">
           <form name="signup-form">
-            <div class="form">
-              <label for="form-name" class="label-style">Imie</label>
-              <div class="form-icon-container">
+            <div class="modal__form">
+              <label for="form-name" class="modal__label-style">Imie</label>
+              <div class="modal__form-icon-container">
                 <input
                   type="text"
                   name="form_name"
                   id="form-name"
                   required
-                  class="form-style form-input"
+                  class="modal__form-style modal__form-input"
                 />
-                <svg width="18" height="18" class="form-icon">
+                <svg width="18" height="18" class="modal__form-icon">
                   <use href="images/icons.svg#icon-person-black-18dp-1"></use>
                 </svg>
               </div>
             </div>
-            <div class="form">
-              <label for="form-phone" class="label-style"> Telefon</label>
-              <div class="form-icon-container">
+            <div class="modal__form">
+              <label for="form-phone" class="modal__label-style"> Telefon</label>
+              <div class="modal__form-icon-container">
                 <input
                   type="tel"
                   name="form_phone"
                   id="form-phone"
                   required
-                  class="form-style form-input"
+                  class="modal__form-style modal__form-input"
                 />
-                <svg width="18" height="18" class="form-icon">
+                <svg width="18" height="18" class="modal__form-icon">
                   <use href="images/icons.svg#icon-phone-black-18dp-1"></use>
                 </svg>
               </div>
             </div>
-            <div class="form">
-              <label for="form-email" class="label-style">Email</label>
-              <div class="form-icon-container">
+            <div class="modal__form">
+              <label for="form-email" class="modal__label-style">Email</label>
+              <div class="modal__form-icon-container">
                 <input
                   type="email"
                   name="form_email"
                   id="form-email"
                   required
-                  class="form-style form-input"
+                  class="modal__form-style modal__form-input"
                 />
-                <svg width="18" height="18" class="form-icon">
+                <svg width="18" height="18" class="modal__form-icon">
                   <use href="images/icons.svg#icon-email-black-18dp-1"></use>
                 </svg>
               </div>
             </div>
-            <div class="form">
-              <label for="form-comment" class="label-style">Komentarz</label>
+            <div class="modal__form">
+              <label for="form-comment" class="modal__label-style">Komentarz</label>
               <textarea
                 name="form_comment"
                 id="form-comment"
                 rows="5"
                 placeholder="Wprowadź tekst"
-                class="form-style form-text"
+                class="modal__form-style modal__form-text"
               ></textarea>
             </div>
-            <div class="consent-container">
-              <label for="form_consent" class="form checkbox-label"></label>
+            <div class="modal__consent-container">
+              <label for="form_consent"></label>
               <input
                 type="checkbox"
                 name="form_consent"
                 id="form_consent"
                 value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności."
-                class="checkbox"
+                class="modal__checkbox"
               />
-              <span class="consent-text"
-                >Oświadczam iż akceptuję <a href="#" class="consent-text-link">Regulamin</a> i
+              <span class="modal__consent-text"
+                >Oświadczam iż akceptuję
+                <a href="#" class="modal__consent-text-link">Regulamin</a> i
                 <a href="#" class="consent-text-link">Politykę Prywatności.</a></span
               >
             </div>
-            <button type="submit" class="form form-button blue-btn">Wyślij</button>
+            <button type="submit" class="modal__form blue-btn blue-btn--modal">Wyślij</button>
           </form>
         </div>
       </div>
