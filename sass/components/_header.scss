@@ -1,0 +1,51 @@
+@import '../utils/variables.scss';
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+
+  &__left-section {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-list {
+    display: flex;
+    gap: 46px;
+  }
+
+  &__right-section {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    line-height: 1.17;
+    color: inherit;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__nav-link--contact {
+    color: $light-gray;
+  }
+}
+
+// co z tym zrobić???
+.page-header__contact:hover .page-header__raster,
+.page-header__nav-link:hover,
+.page-header__nav-link:focus,
+.page-header__nav-link:focus .page-header__raster {
+  color: $main-blue;
+  fill: $main-blue;
+}
