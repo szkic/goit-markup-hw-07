@@ -25,13 +25,12 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-}
 
-// co z tym zrobić???
-.customers__icon-container:hover,
-.customers__icon-container:hover .customers__icon,
-.customers__icon-container:focus,
-.customers__icon-container:focus .customers__icon {
-  border-color: $main-blue;
-  fill: $main-blue;
+  &__icon-container:hover,
+  &__icon-container:hover &__icon,
+  &__icon-container:focus,
+  &__icon-container:focus &__icon {
+    border-color: $main-blue;
+    fill: $main-blue;
+  }
 }

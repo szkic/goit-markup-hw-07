@@ -34,18 +34,44 @@
     display: flex;
     align-items: center;
     gap: 10px;
+
+    &--contact {
+      color: $light-gray;
+    }
   }
 
-  &__nav-link--contact {
-    color: $light-gray;
+  &__contact:hover &__raster,
+  &__nav-link:hover,
+  &__nav-link:focus,
+  &__nav-link:focus &__raster {
+    color: $main-blue;
+    fill: $main-blue;
   }
-}
 
-// co z tym zrobić???
-.page-header__contact:hover .page-header__raster,
-.page-header__nav-link:hover,
-.page-header__nav-link:focus,
-.page-header__nav-link:focus .page-header__raster {
-  color: $main-blue;
-  fill: $main-blue;
+  &__raster {
+    fill: $light-gray;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__active-container {
+    position: relative;
+  }
+
+  &__is-active {
+    color: $main-blue;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      position: absolute;
+      top: 46px;
+      left: 0;
+      background-color: $main-blue;
+    }
+  }
 }

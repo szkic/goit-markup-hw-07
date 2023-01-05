@@ -12,10 +12,17 @@
   box-shadow: 0px 4px 4px $shadow-button;
   border-radius: 4px;
 
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--title {
+    padding: 10px 41px;
+  }
+
   &--modal {
     margin: 30px auto 0 auto;
     padding: 10px 76px;
-    cursor: pointer;
   }
 
   &--footer {
